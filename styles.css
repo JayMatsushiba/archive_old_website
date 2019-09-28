@@ -2,22 +2,35 @@ body {
     background: lightcyan;
 }
 
-#header {
-    text-align: center;
+#welcome-section {
     background: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title {
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+    height: 10vh;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 #contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: grey;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    background: rgba(128, 128, 128, 0.5);
+    height: 20vh;
+    width: 100vw;
+    padding-top: 2vh;
 }
 
 
@@ -31,7 +44,7 @@ a {
     align-items: center;
 }
 
-.contactTile a {
+.contactTile p {
     margin-top: 25px;
 }
 
