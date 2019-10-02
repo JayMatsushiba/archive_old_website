@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
     <head>
         <title>Jay Matsushiba</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <!-- source for icons below-->
         <script src="https://kit.fontawesome.com/49e402ffef.js" crossorigin="anonymous"></script>
         <!-- reference to css file-->
@@ -11,13 +19,21 @@
     </head>
     <body>
         <div id="welcome-section">
-            <img src='hg2018-3237.jpg'>
-            <div id="title">
-                <h1>JAY MATSUSHIBA</h1>
-                <div id="introduction">
-                    <p>Exploring patterns in the natural world for a more responsible future.</p>
+            
+            <!-- <img src='hg2018-3237.jpg'> -->
+            <div class='container'>
+                <div class='row' id='title'> 
+                    <div class='col'>
+                        <h1 class='text-center'>JAY MATSUSHIBA</h1>
+                    </div>
+                </div>
+                <div class='row' id="introduction">
+                    <div class='col'>
+                    <p class='text-center'>Exploring patterns in the natural world for a more responsible future.</p>
+                    </div>
                 </div>
             </div>
+
             <div id="contact">
                 <a href="https://www.linkedin.com/in/jay-matsushiba/">
                 <div class="contactTile" id="linkedIn">
@@ -50,83 +66,86 @@
             </div>
         </div>
 
-        <div id='aboutMe'>
-            <p>Hello, this section is all about me</p>
+
+        <div class='container-fluid'id='aboutMe'>
+            <div class='row h-100'>
+                <div class='col my-auto'><p class='text-center'>Hello, this section is all about me</p></div>
+            </div>
         </div>
 
         <div id="information"> 
             <h2>Education</h2>
-            <div id="listEducation">
-                <a href='https://www.sfu.ca'><div class='educationItem'>
-                    <img src='SFU-box.jpg'>
-                    <p>Bachelors of Science in Biology sp. Ecology, Evolution and Conservation</p>
+            <div class='container-fluid' id="listEducation">
+                <a href='https://www.sfu.ca'><div class='row h-100'>
+                    <div class='col-md-1 my-auto box'><img class='align-self-center img-fluid' src='SFU-box.jpg'></div>
+                    <div class='col my-auto'><p>Bachelors of Science in Biology sp. Ecology, Evolution and Conservation</p></div>
                 </div></a>
-                <a href='https://www.sfu.ca'><div class='educationItem'>
-                    <img src='SFU-box.jpg'>
-                    <p>Spatial Information Systems Certificate</p>
+                <a href='https://www.sfu.ca'><div class='row h-100'>
+                    <div class='col-md-1 my-auto box'><img class='img-fluid' src='SFU-box.jpg'></div>
+                    <div class='col my-auto'><p>Spatial Information Systems Certificate</p></div>
                 </div></a>
-                <a href='https://www.freecodecamp.org'><div class='educationItem'>
-                    <img src='glyph.png'>
-                    <p>Responsive Web Development Certification</p>
+                <a href='https://www.freecodecamp.org'><div class='row h-100'>
+                    <div class='col-md-1 my-auto box'><img class='img-fluid' src='glyph.png'></div>
+                    <div class='col my-auto'><p>Responsive Web Development Certification</p></div>
                 </div></a>
-                <a href='https://www.freecodecamp.org'><div class='educationItem'>
-                    <img src='glyph.png'>
-                    <p>Javascript Algorithms and Data Structure Certification</p>
+                <a href='https://www.freecodecamp.org'><div class='row h-100'>
+                    <div class='col-md-1 my-auto box'><img class='img-fluid' src='glyph.png'></div>
+                    <div class='col my-auto'><p>Javascript Algorithms and Data Structure Certification</p></div>
                 </div></a>
             </div>
         </div>
-
-        <hr>
 
         <div id="projects">
             <div id="gis">
                 <h2>GEOGRAPHIC INFORMATION SCIENCE</h2>
-                <div class='projectGrid'>
-                    <div class="projectTile"><a href="https://jaymatsushiba.github.io/coral-reef/">
-                        <h3>Global Coral Reef Habitat Suitability Analysis</h3>
-                        <p>Multi-Criteria Evaluation Analysis Project</p> 
-                    </a></div>
-                    <div class="projectTile"><a href="https://jaymatsushiba.github.io/amazon-fire/">
-                        <h3>Amazon Forest Fire Model</h3>
-                        <p>Cellular Automata</p>
-                    </a></div>
+                <div class='container-fluid'>
+                    <div class='row justify-content-center'>
+                        <div class="col col-md-offset-5"><a href="https://jaymatsushiba.github.io/coral-reef/">
+                            <h3>Global Coral Reef Habitat Suitability Analysis</h3>
+                            <p>Multi-Criteria Evaluation Analysis Project</p> 
+                        </a></div>
+                        <div class="col col-md-offset-5"><a href="https://jaymatsushiba.github.io/amazon-fire/">
+                            <h3>Amazon Forest Fire Model</h3>
+                            <p>Cellular Automata</p>
+                        </a></div>
+                    </div>
                 </div>
             </div>
 
-            <hr>
 
             <div id="biology">
                 <h2>Biology</h2>
-                <div class='projectGrid'>
-                    <div class='projectTile'><a href="https://jaymatsushiba.github.io/seaweed/">
-                        <h3>Seaweed Distribution Project</h3>
-                        <p>BMSC Coastal Community Ecology Project</p>
-                    </a></div>
-                    <div class="projectTile"><a href="https://jaymatsushiba.github.io/evolution/">
-                        <h3>Evolution and Gene Flow Model</h3>
-                        <p>Model of Evolution and Gene Flow in JavaScript</p>
-                    </a></div>
+                <div class='container-fluid'>
+                    <div class='row'>
+                        <div class='col'><a href="https://jaymatsushiba.github.io/seaweed/">
+                            <h3>Seaweed Distribution Project</h3>
+                            <p>BMSC Coastal Community Ecology Project</p>
+                        </a></div>
+                        <div class="col"><a href="https://jaymatsushiba.github.io/evolution/">
+                            <h3>Evolution and Gene Flow Model</h3>
+                            <p>Model of Evolution and Gene Flow in JavaScript</p>
+                        </a></div>
+                    </div>
                 </div>
             </div>
 
-            <hr>
 
-            <div id="for_fun">
+            <div id="for-fun">
                 <h2>Programming</h2>
-                    <div class='projectGrid'>
-                    <!--
-                    <div class="projectTile"><a href="link-to-project-page">
-                        <h3>Snake</h3>
-                        <p>Games made for fun</p>
-                    </a></div>
-                    -->
-                    <div class='projectTile'><a href="https://jaymatsushiba.github.io/cash-register/">
-                        <h3>Cash Register</h3>
-                        <p>Cash Register Project for Javascript Certification at FCC</p>
-                    </a></div>
+                <div class='container-fluid'>
+                    <div class='row'>
+                        <div class='col'><a href="https://jaymatsushiba.github.io/cash-register/">
+                            <h3>Cash Register</h3>
+                            <p>Cash Register Project for Javascript Certification at FCC</p>
+                        </a></div>
+                    </div>
                 </div>
             </div>
         </div>
-        
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>
