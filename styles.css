@@ -5,7 +5,6 @@ body {
     font-family: 'Overpass Mono', monospace;
     color: white;
     height: 100%;
-    width: 100%;
 }
 
 html {
@@ -22,31 +21,40 @@ h2 {
     background-image: url("hg2018-3237.jpg");
 
     /* Full height */
-    height: 110%; 
+    height: 100%; 
   
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -10vh;
+    margin-top: 0;
+    z-index: -1;
 }
 
-#title {
-    padding-top: 46.5vh;
+#welcome-section-text {
+    position: absolute;
+    z-index: 1;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-38%);
 }
 
-#welcome-section h1 { 
+#welcome-section-text h1 { 
     font-family: 'Overpass Mono', monospace;
     font-size: 9vh;
 }
 
-#welcome-section p {
+#welcome-section-text p {
     font-family: 'Overpass Mono', monospace;
     font-size: 3vh;
 }
 
 #contact {
-    margin-top: 15vh;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%,-50%);
 }
 
 a {
