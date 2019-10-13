@@ -1,3 +1,14 @@
+html {
+    height: 100%;
+    font-size: 16px; 
+}
+
+@media screen and (max-width: 770px) {
+    html {
+        font-size: 10px; 
+    }
+}
+
 body {
     background: #324759;
     margin: 0px; 
@@ -7,14 +18,13 @@ body {
     height: 100%;
 }
 
-html {
-    height: 100%;
-}
-
 h2 {
     font-size: 40px;
     text-transform: uppercase;
 }
+
+/* Welcome page for website, full page spread
+- currently only desktop friendly */ 
 
 #welcome-section {
     /* The image used */
@@ -37,18 +47,21 @@ h2 {
     display: inline-block;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-38%);
+    transform: translate(-50%,-58%);
 }
 
 #welcome-section-text h1 { 
     font-family: 'Overpass Mono', monospace;
-    font-size: 9vh;
+    font-size: 5rem;
 }
 
 #welcome-section-text p {
     font-family: 'Overpass Mono', monospace;
-    font-size: 3vh;
+    font-size: 1.2rem;
+    margin-top: -1rem;
 }
+
+/* for contact information tiles on welcome page */
 
 #contact {
     position: absolute;
@@ -68,7 +81,7 @@ a:hover {
 }
 
 .contactTile {
-    --size-contact-tile: 80px;
+    --size-contact-tile: 5.5rem;
     height: var(--size-contact-tile);
     width: var(--size-contact-tile);
     margin: 15px;
@@ -104,6 +117,8 @@ a:hover {
     z-index: 1;
   }
 
+/* biography section right underneath welcome page */ 
+
 #aboutMe {
     background: white;
     color: #324759;
@@ -111,6 +126,8 @@ a:hover {
     font-size: 20px;
     font-family: 'Overpass Mono', monospace;
 }
+
+/* education section */ 
 
 .box {
     height: 80px;
@@ -128,10 +145,13 @@ a:hover {
     background-color: #F2C1BD;
 }
 
+/* projects section */ 
+
 #projects .col {
     background-color: #0F1B26;
     text-align: center;
     margin: 50px;
+    border-radius: 5%;
 }
 
 #projects .col:hover {
