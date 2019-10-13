@@ -41,7 +41,11 @@ h2 {
 
 #welcome-section p {
     font-family: 'Overpass Mono', monospace;
-    font-size: 2vh;
+    font-size: 3vh;
+}
+
+#contact {
+    margin-top: 15vh;
 }
 
 a {
@@ -54,41 +58,33 @@ a:hover {
     color: white;
 }
 
-/*
-#contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background: (white, 0.5);
-    height: 20vh;
-    width: 100vw;
-    padding-top: 2vh;
-    z-index: 3;
-    border-top: 2px solid #F2C1BD;
-}
-
-*/
 .contactTile {
-    height: 100px;
-    width: 100px;
-    border: 2px solid white; 
+    --size-contact-tile: 80px;
+    height: var(--size-contact-tile);
+    width: var(--size-contact-tile);
     margin: 15px;
 }
 
 .contactTile i { 
-    font-size: 7vh;
+    font-size: calc(var(--size-contact-tile)*0.7);
     color: #324759;
-    position:absolute;
+    z-index: 4;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.contactTile p {
+#welcome-section .contactTile p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2vh;
+    font-size: calc(var(--size-contact-tile)*0.2);
     color: white;
-    position: absolute; 
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,180%);
 }
-
-
 
 .circle {
     width: 100%;
@@ -96,6 +92,7 @@ a:hover {
     background:#F2C1BD;
     border-radius: 50%;
     position: absolute;
+    z-index: 1;
   }
 
 #aboutMe {
@@ -136,47 +133,3 @@ a:hover {
 #gis, #biology, #for-fun {
     border-top: 1px solid white; 
 }
-
-/*
-
-For use without Bootstrap 
-
-.projectGrid {
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 45%));
-    grid-gap: 5%;
-}
-
-.projectTile {
-    text-align: center;
-    background: rgba(128, 128, 128, 0.5);
-}
-
-#gis {
-    padding: 20px;
-}
-
-#biology {
-    padding: 20px;
-}
-
-#for_fun {
-    padding: 20px;
-}
-
-@media screen and (max-height: 480px) and (orientation: landscape) {
-    #title h1 { 
-        font-family: 'Overpass Mono', monospace;
-        font-size: 43.2px;
-    }
-    
-    #title p {
-        font-family: 'Open Sans', sans serif;
-        font-size: 9.6px;
-        margin-top: -38.4px;
-    }
-}
-
-*/
-
-
