@@ -9,7 +9,16 @@ html {
   }
 }
 body {
-  background: #324759;
+  /* The image used */
+  background-image: url("hg2018-3237.jpg");
+  /* Full height */
+  height: 100%;
+  /* Fixed position of background, content scrolls but background position static */
+  background-attachment: fixed;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0px;
   padding: 0px;
   font-family: "Overpass Mono", monospace;
@@ -35,19 +44,9 @@ a:hover {
 /* Welcome page for website, full page spread
 - currently only desktop friendly */
 #welcome-section {
-  /* The image used */
-  background-image: url("hg2018-3237.jpg");
-  /* Full height */
   height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 0;
-  z-index: -1;
 }
-
-#welcome-section-text {
+#welcome-section #welcome-section-text {
   position: absolute;
   z-index: 1;
   display: inline-block;
@@ -55,11 +54,12 @@ a:hover {
   top: 50%;
   transform: translate(-50%, -58%);
 }
-#welcome-section-text h1 {
+#welcome-section #welcome-section-text h1 {
   font-family: "Overpass Mono", monospace;
-  font-size: 5rem;
+  font-size: 6rem;
+  color: #0F1B26;
 }
-#welcome-section-text p {
+#welcome-section #welcome-section-text p {
   font-family: "Overpass Mono", monospace;
   font-size: 1.2rem;
   margin-top: -1rem;
@@ -71,6 +71,10 @@ a:hover {
   left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  max-width: 100%;
 }
 
 .contactTile {
@@ -120,7 +124,17 @@ a:hover {
 }
 
 /* education section */
-.box {
+#information {
+  background: #324759;
+}
+
+#listEducation p {
+  padding-top: 2.5vh;
+}
+#listEducation .row:hover {
+  background-color: #F2C1BD;
+}
+#listEducation .box {
   height: 80px;
   width: 100px;
   display: flex;
@@ -128,28 +142,20 @@ a:hover {
   flex-wrap: wrap;
 }
 
-#listEducation p {
-  padding-top: 2.5vh;
-}
-
-#listEducation .row:hover {
-  background-color: #F2C1BD;
-}
-
 /* projects section */
+#projects {
+  background: #324759;
+}
 #projects .col {
   background-color: #0F1B26;
   text-align: center;
-  margin: 50px;
-  border-radius: 5%;
+  border-radius: 10px;
 }
-
 #projects .col:hover {
   color: #324759;
   background-color: #F2C1BD;
 }
-
-#gis, #biology, #for-fun {
+#projects #gis, #projects #biology, #projects #for-fun {
   border-top: 1px solid white;
 }
 
