@@ -124,24 +124,6 @@ a:hover {
 }
 
 /* education section */
-#information {
-  background: #324759;
-}
-
-#listEducation p {
-  padding-top: 2.5vh;
-}
-#listEducation .row:hover {
-  background-color: #F2C1BD;
-}
-#listEducation .box {
-  height: 80px;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
 /* projects section */
 #projects {
   background: #324759;

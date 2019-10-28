@@ -73,31 +73,35 @@
 
         <div class='container-fluid'id='aboutMe'>
             <div class='row h-100'>
-                <div class='col my-auto'><p class='text-center'>Hello, this section is all about me</p></div>
+                <div class='col my-auto'>
+                    <p id="biography"></p>
+                </div>
             </div>
         </div>
 
-        <div id="information"> 
+        <!--
+        <div id="education"> 
             <h2>Education</h2>
             <div class='container-fluid' id="listEducation">
                 <a href='https://www.sfu.ca'><div class='row h-100'>
-                    <div class='col-md-1 my-auto box'><img class='align-self-center img-fluid' src='SFU-box.jpg'></div>
+                    <div class='col-md-1 my-auto'><img class='align-self-center img-fluid' src='SFU-box.jpg'></div>
                     <div class='col my-auto'><p>Bachelors of Science in Biology sp. Ecology, Evolution and Conservation</p></div>
                 </div></a>
                 <a href='https://www.sfu.ca'><div class='row h-100'>
-                    <div class='col-md-1 my-auto box'><img class='img-fluid' src='SFU-box.jpg'></div>
+                    <div class='col-md-1 my-auto'><img class='img-fluid' src='SFU-box.jpg'></div>
                     <div class='col my-auto'><p>Spatial Information Systems Certificate</p></div>
                 </div></a>
                 <a href='https://www.freecodecamp.org'><div class='row h-100'>
-                    <div class='col-md-1 my-auto box'><img class='img-fluid' src='glyph.png'></div>
+                    <div class='col-md-1 my-auto'><img class='img-fluid' src='glyph.png'></div>
                     <div class='col my-auto'><p>Responsive Web Development Certification</p></div>
                 </div></a>
                 <a href='https://www.freecodecamp.org'><div class='row h-100'>
-                    <div class='col-md-1 my-auto box'><img class='img-fluid' src='glyph.png'></div>
+                    <div class='col-md-1 my-auto'><img class='img-fluid' src='glyph.png'></div>
                     <div class='col my-auto'><p>Javascript Algorithms and Data Structure Certification</p></div>
                 </div></a>
             </div>
         </div>
+    -->
 
         <div id="projects">
             <div id="gis">
@@ -162,6 +166,12 @@
                 introEl.slideUp(1000, function() { $(document).off('scroll'); });
             });
         })();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#biography').load("C:/Users/Jay WorkStation/Documents/GitHub/JayMatsushiba.github.io/bio.txt");
+        });
     </script>
 
 
