@@ -5,14 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- jQuery -->
         <script src="jquery-3.4.1.js"></script>
-
         <!-- source for icons below-->
         <script src="https://kit.fontawesome.com/49e402ffef.js" crossorigin="anonymous"></script>
+
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- reference to css file-->
         <link href="styles.css" rel="stylesheet" type="text/css">
         <!-- font source-->
@@ -37,7 +38,8 @@
 
             <div id="contact" class='container'>
                 <div id="contactTileHolder" class='row justify-content-center'>
-                    <a href="https://www.linkedin.com/in/jay-matsushiba/">
+                    <!-- LinkedIn link -->
+                    <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
                     <div class="col-auto p-0 contactTile mr-xs-auto" id="linkedIn">
                         <div class="circle">
                             <i class="fab fa-linkedin"></i>
@@ -45,15 +47,17 @@
                         <p>LinkedIn</p>
                     </div>
                     </a>
-                    <a href="https://github.com/JayMatsushiba">
+                    <!-- GitHub link -->
+                    <a href="https://github.com/JayMatsushiba" target="_blank">
                         <div class="col-auto p-0 contactTile mr-xs-auto" id="github">
                             <div class="circle">
-                                <i class="fab fa-github" id="github-icon"></i>
+                                <i class="fab fa-github"></i>
                             </div>
                             <p>GitHub</p>
                         </div>
                     </a>
-                    <a href="mailto:jay_matsushiba@sfu.ca">
+                    <!-- SFU Email link -->
+                    <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
                         <div class="col-auto p-0 contactTile mr-xs-auto" id="email">
                             <div class="circle">
                                 <i class="fas fa-envelope"></i>
@@ -61,7 +65,8 @@
                             <p>Email</p>
                         </div>
                     </a>
-                    <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf">
+                    <!-- Resume link -->
+                    <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
                     <div class="col-auto p-0 contactTile" id="resume"> 
                         <div class="circle">
                             <i class="fas fa-file-alt"></i>
@@ -152,13 +157,14 @@
             </div>
         </div>
 
-
+    <!-- script used for loading biography text file into aboutMe section -->
     <script>
         $(document).ready(function() {
             $("#bio-p").load("bio.txt")
         });
     </script>
 
+    <!-- script used for the stationary background on scroll -->
     <script type="text/javascript">
         (function() {
             var windowH = $(window).height(),
@@ -170,8 +176,6 @@
             });
         })();
     </script>
-
-
 
     </body>
 </html>
