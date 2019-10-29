@@ -50,7 +50,7 @@ a:hover {
 #welcome-section #welcome-section-text {
   z-index: 1;
   position: fixed;
-  margin-top: 24%;
+  margin-top: 41.5vh;
   margin-left: 2rem;
   z-index: -2;
 }
