@@ -87,15 +87,6 @@ a:hover {
 
 /* for contact information tiles on welcome page */
 
-#contact {
-    position: absolute;
-    left: 50%;
-    top: 80%;
-    transform: translate(-50%,-50%);
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-}
-
 .contactTile {
     --size-contact-tile: 5.5rem;
     height: var(--size-contact-tile);
@@ -114,7 +105,7 @@ a:hover {
     p {
         font-family: 'Open Sans', sans-serif;
         font-size: calc(var(--size-contact-tile)*0.2);
-        color: $lightest-color;
+        color: $dark-color;
         z-index: 3;
         position: absolute;
         left: 50%;
@@ -144,9 +135,10 @@ $padding: 3rem;
 
     img {
         border-radius: 50%;
-        max-height: 20%;
-        width: auto;
-        padding-bottom: 3rem;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        padding-top: $padding;
     }
     .aboutMeSubTitle {
         text-align: right;
