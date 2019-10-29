@@ -48,7 +48,6 @@ a:hover {
   background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #324759);
 }
 #welcome-section #welcome-section-text {
-  z-index: 1;
   position: fixed;
   margin-top: 41.5vh;
   margin-left: 2rem;
