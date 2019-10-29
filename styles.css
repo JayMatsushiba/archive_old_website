@@ -45,24 +45,26 @@ a:hover {
 - currently only desktop friendly */
 #welcome-section {
   height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), #324759);
 }
 #welcome-section #welcome-section-text {
-  position: absolute;
   z-index: 1;
-  display: inline-block;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -58%);
+  position: fixed;
+  margin-top: 24%;
+  margin-left: 2rem;
+  z-index: -2;
 }
 #welcome-section #welcome-section-text h1 {
   font-family: "Overpass Mono", monospace;
   font-size: 6rem;
-  color: #0F1B26;
+  color: white;
+  margin-bottom: -2rem;
+  padding-bottom: 0;
 }
 #welcome-section #welcome-section-text p {
-  font-family: "Overpass Mono", monospace;
-  font-size: 1.2rem;
-  margin-top: -1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
 }
 
 /* for contact information tiles on welcome page */
@@ -71,10 +73,8 @@ a:hover {
   left: 50%;
   top: 80%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
   padding-top: 1rem;
   padding-bottom: 2rem;
-  max-width: 100%;
 }
 
 .contactTile {
@@ -118,9 +118,24 @@ a:hover {
 #aboutMe {
   background: white;
   color: #324759;
-  height: 20%;
-  font-size: 20px;
-  font-family: "Overpass Mono", monospace;
+}
+#aboutMe img {
+  border-radius: 50%;
+  max-height: 20%;
+  width: auto;
+  padding-bottom: 3rem;
+}
+#aboutMe .aboutMeSubTitle {
+  text-align: right;
+}
+#aboutMe #bio-p, #aboutMe #bio-list {
+  padding-top: 1.5rem;
+}
+#aboutMe .row:first-child {
+  padding-top: 3rem;
+}
+#aboutMe .row:last-child {
+  padding-bottom: 3rem;
 }
 
 /* education section */

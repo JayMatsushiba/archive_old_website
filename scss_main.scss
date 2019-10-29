@@ -1,6 +1,6 @@
 // theme fonts for scss 
 $title-font: 'Overpass Mono', monospace;
-$main-font: 'Overpass Mono', monospace;
+$main-font: 'Roboto', sans-serif;
 
 // theme colours for scss 
 $lightest-color: white;
@@ -61,25 +61,27 @@ a:hover {
 
 #welcome-section {
     height: 100%;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0), $dark-color);
 
     #welcome-section-text {
-        position: absolute;
         z-index: 1;
-        display: inline-block;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-58%);
+        position: fixed;
+        margin-top: 24%;
+        margin-left: 2rem;
+        z-index: -2;
 
         h1 { 
             font-family: $title-font;
             font-size: 6rem;
-            color: $darkest-color
+            color: $lightest-color;
+            margin-bottom: -2rem;
+            padding-bottom: 0;
         }
 
         p {
-            font-family: $title-font;
-            font-size: 1.2rem;
-            margin-top: -1rem;
+            font-family: $main-font;
+            font-weight: 100;
+            font-size: 2rem;
         }
     }
 }
@@ -91,11 +93,8 @@ a:hover {
     left: 50%;
     top: 80%;
     transform: translate(-50%,-50%);
-    background: rgba(0,0,0,0.5);
     padding-top: 1rem;
     padding-bottom: 2rem;
-    max-width: 100%;
-
 }
 
 .contactTile {
@@ -138,12 +137,31 @@ a:hover {
 
 /* biography section right underneath welcome page */ 
 
+$padding: 3rem;
+
 #aboutMe {
     background: $lightest-color;
     color: $dark-color;
-    height: 20%;
-    font-size: 20px;
-    font-family: 'Overpass Mono', monospace;
+
+    img {
+        border-radius: 50%;
+        max-height: 20%;
+        width: auto;
+        padding-bottom: 3rem;
+    }
+    .aboutMeSubTitle {
+        text-align: right;
+    }
+    #bio-p, #bio-list {
+        padding-top: 1.5rem;
+    }
+
+    .row:first-child {
+        padding-top: $padding;
+    }
+    .row:last-child {
+        padding-bottom: $padding;
+    }
 }
 
 /* education section */ 
