@@ -73,8 +73,7 @@
 
         <div class='container-fluid'id='aboutMe'>
             <div class='row h-100'>
-                <div id="bio-div">
-                </div>
+                <p id="bio-p"></p>
             </div>
         </div>
 
@@ -151,13 +150,11 @@
         </div>
 
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="jquery-3.4.1.js"></script>
 
     <script>
         $(document).ready(function() {
-            $("#bio-div").load("bio.html", function() {
-                window.alert('Request complete');
-            });
+            $("#bio-p").load("bio.txt")
         });
     </script>
 
