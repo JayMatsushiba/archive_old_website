@@ -3,11 +3,6 @@ html {
   font-size: 16px;
 }
 
-@media screen and (max-width: 993px) {
-  html {
-    font-size: 14px;
-  }
-}
 body {
   /* The image used */
   background-image: url("hg2018-3237.jpg");
@@ -49,9 +44,10 @@ a:hover {
 }
 #welcome-section #welcome-section-text {
   position: fixed;
-  margin-top: 41.5vh;
-  margin-left: 2rem;
   z-index: -2;
+  display: inline-block;
+  top: 50%;
+  transform: translate(5%, -62%);
 }
 #welcome-section #welcome-section-text h1 {
   font-family: "Overpass Mono", monospace;
@@ -71,7 +67,7 @@ a:hover {
   --size-contact-tile: 5.5rem;
   height: var(--size-contact-tile);
   width: var(--size-contact-tile);
-  margin: 15px;
+  margin: -1rem 1rem 0 1rem;
 }
 .contactTile i {
   font-size: calc(var(--size-contact-tile)*0.7);
@@ -125,14 +121,14 @@ a:hover {
 #aboutMe .row:first-child {
   padding-top: 3rem;
 }
-#aboutMe .row:last-child {
+#aboutMe #contactTileHolder {
   padding-bottom: 3rem;
 }
 
-/* education section */
 /* projects section */
 #projects {
   background: #324759;
+  padding-top: 3rem;
 }
 #projects .col {
   background-color: #0F1B26;
@@ -142,9 +138,6 @@ a:hover {
 #projects .col:hover {
   color: #324759;
   background-color: #F2C1BD;
-}
-#projects #gis, #projects #biology, #projects #for-fun {
-  border-top: 1px solid white;
 }
 
 /*# sourceMappingURL=styles.css.map */

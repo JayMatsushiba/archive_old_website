@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
+    <!-- Scripts -->
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         
@@ -18,7 +18,7 @@
         <!-- source for icons below-->
         <script src="https://kit.fontawesome.com/49e402ffef.js" crossorigin="anonymous"></script>
 
-
+    <!-- Links -->
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- reference to css file-->
@@ -29,7 +29,9 @@
     
         <title>Jay Matsushiba</title>
     </head>
+
     <body>
+    <!-- Welcome Page with name and slogan, haida gwaii photo background -->
         <div id="welcome-section">
             <div id='welcome-section-text'>
                 <div class='row justify-content-start' id='title'> 
@@ -45,6 +47,7 @@
             </div>
         </div>
 
+    <!-- About Me section, with biography, photo, educational background and media links -->
         <div class='container-fluid' id='aboutMe'>
             <div class='row no-gutters justify-content-center'>
                 <div class='col-2'>
@@ -57,115 +60,108 @@
                             <h5 class="aboutMeSubTitle">ABOUT</h5>
                         </div>
                         <p id="bio-p" class='col-9'></p>
+                    </div>
+                    <div class='row justify-content-center'>
+                        <div class='col-2'>
+                            <hr>
+                            <h5 class='aboutMeSubTitle'>EDUCATION</h5>  
                         </div>
-                        <div class='row justify-content-center'>
-                            <div class='col-2'>
-                                <hr>
-                                <h5 class='aboutMeSubTitle'>EDUCATION</h5>  
+                        <div class='col-9'>              
+                            <ul id="bio-list" class='list-unstyled'>
+                                <li class='school'>Simon Fraser University</li>
+                                    <ul>
+                                        <li class='listEducationItem'>Bachelors of Science in Biology sp. Ecology, Evolution and Conservation</li>
+                                        <li class='listEducationItem'>Certificate in Geographical Information Science</li>
+                                    </ul>    
+                                <li class='school'>freeCodeCamp</li>
+                                    <ul>
+                                        <li class='listEducationItem'>Responsive Web Development Certification</li>
+                                        <li class='listEducationItem'>Javascript Algorithms and Data Structure Certification</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='row justify-content-center'>
+                        <div class='col-2'>
+                            <hr>
+                            <h5 class='aboutMeSubTitle'>CONTACT</h5>
+                        </div>
+                        <div class='col-9'>
+                            <div id="contactTileHolder" class='row'>
+                                <!-- LinkedIn link -->
+                                <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
+                                    <div class="col-auto p-0 contactTile mr-xs-auto" id="linkedIn">
+                                        <div class="circle">
+                                            <i class="fab fa-linkedin"></i>
+                                        </div>
+                                        <p>LinkedIn</p>
+                                    </div>
+                                </a>
+                                <!-- GitHub link -->
+                                <a href="https://github.com/JayMatsushiba" target="_blank">
+                                    <div class="col-auto p-0 contactTile mr-xs-auto" id="github">
+                                        <div class="circle">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                        <p>GitHub</p>
+                                    </div>
+                                </a>
+                                <!-- SFU Email link -->
+                                <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
+                                    <div class="col-auto p-0 contactTile mr-xs-auto" id="email">
+                                        <div class="circle">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <p>Email</p>
+                                    </div>
+                                </a>
+                                <!-- Resume link -->
+                                <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
+                                    <div class="col-auto p-0 contactTile" id="resume"> 
+                                        <div class="circle">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <p>Resume</p>
+                                    </div>
+                                </a>
                             </div>
-                            <div class='col-9'>              
-                                <ul id="bio-list" class='list-unstyled'>
-                                    <li class='school'>Simon Fraser University</li>
-                                        <ul>
-                                            <li class='listEducationItem'>Bachelors of Science in Biology sp. Ecology, Evolution and Conservation</li>
-                                            <li class='listEducationItem'>Certificate in Geographical Information Science</li>
-                                        </ul>    
-                                    <li class='school'>freeCodeCamp</li>
-                                        <ul>
-                                            <li class='listEducationItem'>Responsive Web Development Certification</li>
-                                            <li class='listEducationItem'>Javascript Algorithms and Data Structure Certification</li>
-                                        </ul>
-                                </ul>
-                            </div>
-                        </div>    
+                        </div>
+                    </div>    
                 </div>
             </div>
-                <div id="contactTileHolder" class='row justify-content-center'>
-                        <!-- LinkedIn link -->
-                        <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
-                        <div class="col-auto p-0 contactTile mr-xs-auto" id="linkedIn">
-                            <div class="circle">
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                            <p>LinkedIn</p>
-                        </div>
-                        </a>
-                        <!-- GitHub link -->
-                        <a href="https://github.com/JayMatsushiba" target="_blank">
-                            <div class="col-auto p-0 contactTile mr-xs-auto" id="github">
-                                <div class="circle">
-                                    <i class="fab fa-github"></i>
-                                </div>
-                                <p>GitHub</p>
-                            </div>
-                        </a>
-                        <!-- SFU Email link -->
-                        <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
-                            <div class="col-auto p-0 contactTile mr-xs-auto" id="email">
-                                <div class="circle">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <p>Email</p>
-                            </div>
-                        </a>
-                        <!-- Resume link -->
-                        <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
-                        <div class="col-auto p-0 contactTile" id="resume"> 
-                            <div class="circle">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <p>Resume</p>
-                        </div>
-                        </a>
-                    </div>
-            </div>
-            
         </div>
 
+    <!-- Project section, for GIS, Biology and Programming-->
+        <!-- To-do list: 
+        - Design project tiles and add images 
+        - Rethink organization, may not separate into different sections
+            - maybe colour code the grid by category 
+        - Better grid system organization, use Bootstrap to make more mobile friendly 
+        -->
         <div id="projects">
-            <div id="gis">
-                <h2>GEOGRAPHIC INFORMATION SCIENCE</h2>
-                <div class='container-fluid'>
-                    <div class='row justify-content-center'>
-                        <div class="col col-md-offset-5"><a href="https://jaymatsushiba.github.io/coral-reef/">
-                            <h3>Global Coral Reef Habitat Suitability Analysis</h3>
-                            <p>Multi-Criteria Evaluation Analysis Project</p> 
-                        </a></div>
-                        <div class="col col-md-offset-5"><a href="https://jaymatsushiba.github.io/cellularautomata/">
-                            <h3>Amazon Forest Fire Model</h3>
-                            <p>Cellular Automata</p>
-                        </a></div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="biology">
-                <h2>Biology</h2>
-                <div class='container-fluid'>
-                    <div class='row'>
-                        <div class='col'><a href="https://jaymatsushiba.github.io/seaweed/">
-                            <h3>Seaweed Distribution Project</h3>
-                            <p>BMSC Coastal Community Ecology Project</p>
-                        </a></div>
-                        <div class="col"><a href="https://jaymatsushiba.github.io/evolution/">
-                            <h3>Evolution and Gene Flow Model</h3>
-                            <p>Model of Evolution and Gene Flow in JavaScript</p>
-                        </a></div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="for-fun">
-                <h2>Programming</h2>
-                <div class='container-fluid'>
-                    <div class='row'>
-                        <div class='col'><a href="https://jaymatsushiba.github.io/cash-register/">
-                            <h3>Cash Register</h3>
-                            <p>Cash Register Project for Javascript Certification at FCC</p>
-                        </a></div>
-                    </div>
+            <div class='container'>
+                <h2>Projects</h2>
+                <div class='row'>
+                    <div class='col'><a href="https://jaymatsushiba.github.io/coral-reef/">
+                        <h3>Global Coral Reef Habitat Suitability Analysis</h3>
+                        <p>Multi-Criteria Evaluation Analysis Project</p> 
+                    </a></div>
+                    <div class='col'><a href="https://jaymatsushiba.github.io/cellularautomata/">
+                        <h3>Amazon Forest Fire Model</h3>
+                        <p>Cellular Automata</p>
+                    </a></div>
+                    <div class='col'><a href="https://jaymatsushiba.github.io/seaweed/">
+                        <h3>Seaweed Distribution Project</h3>
+                        <p>BMSC Coastal Community Ecology Project</p>
+                    </a></div>
+                    <div class="col"><a href="https://jaymatsushiba.github.io/evolution/">
+                        <h3>Evolution and Gene Flow Model</h3>
+                        <p>Model of Evolution and Gene Flow in JavaScript</p>
+                    </a></div>
+                    <div class='col'><a href="https://jaymatsushiba.github.io/cash-register/">
+                        <h3>Cash Register</h3>
+                        <p>Cash Register Project for Javascript Certification at FCC</p>
+                    </a></div>
                 </div>
             </div>
         </div>
@@ -176,19 +172,6 @@
             $("#bio-p").text("fallback text: Jay is a passionate advocate for the oceans, dedicating his work in education at the Vancouver Aquarium, Richmond Nature Park and Metro Vancouver. He has spoken on the topic of environmental education at TEDx events, the Vancouver School Board Sustainability Conference, and the Richmond Earth Day Youth Summit. He brings his passion to his own education, as he currently studies Ecology, Evolution and Conservation at Simon Fraser University. Jay can be found exploring the natural world every chance that he gets. Recently, Jay completed the East Beach trail hike on Haida Gwaii, covering 90 km by foot solo over the course of five days. As a strong proponent of storytelling, Jay believes that Promenades sur l’eau will tell the story about our oceans and our connections to the natural world through fashion.");
             $("#bio-p").load("bio.txt")
         });
-    </script>
-
-    <!-- script used for the stationary background on scroll -->
-    <script type="text/javascript">
-        (function() {
-            var windowH = $(window).height(),
-                introEl = $('div.welcome-section'),
-                introHeadingH = introEl.find('h1').height();
-            introEl.css('padding', (windowH - introHeadingH)/2 + 'px 0');
-            $(document).on('scroll', function() {
-                introEl.slideUp(1000, function() { $(document).off('scroll'); });
-            });
-        })();
     </script>
 
     </body>
