@@ -8344,13 +8344,6 @@ a:hover {
   background: white;
   color: #324759;
 }
-#aboutMe img {
-  border-radius: 50%;
-  max-width: 100%;
-  display: block;
-  margin: auto;
-  padding-top: 3rem;
-}
 #aboutMe .aboutMeSubTitle {
   text-align: left;
 }
