@@ -49,11 +49,13 @@
 
     <!-- About Me section, with biography, photo, educational background and media links -->
         <div class='container-fluid' id='aboutMe'>
-            <div class='col-sm-2'>
-                <img id='im-on-a-boat' src='imonaboat.jpg'>
+            <div class='parallax-container'>
+                <section class='background_image'>
+                    <img src='imonaboat.jpg'>
+                </section>
             </div>
             <div class='row no-gutters'> 
-                <div class='col-sm-10'>
+                <div class='col-sm-10 foreground'>
                     <div class='row justify-content-center'>
                         <div class='col-sm-2'>
                             <hr>
@@ -163,6 +165,12 @@
             </div>
         </div>
 
+    <!-- footer section -->
+
+        <div id='footer' class='container-fluid p-5'>
+            <p>This is the end of my website</p>
+        </div>
+
     <!-- script used for loading biography text file into aboutMe section -->
     <script>
         $(document).ready(function() {
@@ -170,6 +178,8 @@
             $("#bio-p").load("bio.txt")
         });
     </script>
+
+
 
     </body>
 </html>
