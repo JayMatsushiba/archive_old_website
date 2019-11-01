@@ -8299,7 +8299,11 @@ a:hover {
 }
 
 /* for contact information tiles on welcome page */
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
+  .aboutMeSubTitle {
+    text-align: left;
+  }
+
   #contactTileHolder {
     justify-content: center;
   }
@@ -8347,6 +8351,11 @@ a:hover {
 #aboutMe .aboutMeSubTitle {
   text-align: right;
 }
+@media (max-width: 992px) {
+  #aboutMe .aboutMeSubTitle {
+    text-align: left;
+  }
+}
 #aboutMe #bio-p, #aboutMe #bio-list {
   padding-top: 1.5rem;
 }
@@ -8376,14 +8385,14 @@ a:hover {
 /* projects section */
 #projects {
   background: #324759;
-  padding-top: 3rem;
 }
-#projects .col {
+#projects .projectTile {
   background-color: #0F1B26;
   text-align: center;
   border-radius: 10px;
+  margin: 0 1rem 1rem 1rem;
 }
-#projects .col:hover {
+#projects .projectTile:hover {
   color: #324759;
   background-color: #F2C1BD;
 }

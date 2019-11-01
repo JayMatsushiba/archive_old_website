@@ -91,7 +91,10 @@ a:hover {
 /* for contact information tiles on welcome page */
 
 // centers contact tiles for mobile 
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(md) {
+    .aboutMeSubTitle {
+        text-align: left;
+    }
     #contactTileHolder {
         justify-content: center;
     }
@@ -144,6 +147,12 @@ $padding: 3rem;
     .aboutMeSubTitle {
         text-align: right;
     }
+    @media (max-width: 992px) {
+        .aboutMeSubTitle {
+            text-align: left;
+        }
+    }
+
     #bio-p, #bio-list {
         padding-top: 1.5rem;
     }
@@ -178,13 +187,13 @@ $padding: 3rem;
 
 #projects {
     background: $dark-color;
-    padding-top: 3rem;
-    .col {
+    .projectTile {
         background-color: $darkest-color;
         text-align: center;
         border-radius: 10px;
+        margin: 0 1rem 1rem 1rem;
     }
-    .col:hover {
+    .projectTile:hover {
         color: $dark-color;
         background-color: $light-color;
     }
