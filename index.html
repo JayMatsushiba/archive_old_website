@@ -1,185 +1,248 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
 
-    <!-- Scripts -->
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        
-        <!-- Popper.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        
-        <!-- Bootstrap.js -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        
-        <!-- source for icons below-->
-        <script src="https://kit.fontawesome.com/49e402ffef.js" crossorigin="anonymous"></script>
-
-    <!-- Links -->
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- reference to css file-->
         <link href="styles.css" rel="stylesheet" type="text/css">
+
         <!-- font source-->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass+Mono&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
-    
+        <!-- source for fontawesome icons -->
+        <script src="https://kit.fontawesome.com/49e402ffef.js" crossorigin="anonymous"></script>
+
         <title>Jay Matsushiba</title>
     </head>
-
     <body>
-    <!-- Welcome Page with name and slogan, haida gwaii photo background -->
-        <div id="welcome-section">
-            <div id='welcome-section-text'>
-                <div class='row justify-content-start' id='title'> 
-                    <div class='col'>
-                        <h1>JAY MATSUSHIBA</h1>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/jaymatsushiba-light.svg" alt='JAY MATSUSHIBA' height="20" width="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link " href="#bio-page">About</a>
+                    <a class="nav-item nav-link " href="#project-page">Projects</a>
+                    <a class="nav-item nav-link " href="#expedition-page">Expeditions</a>
+                    <a class="nav-item nav-link " href="#contact-page">Contact</a>
+                  </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title Page -->
+        <div id="title-page">
+            <img id="title-image" src="images/hg2018-3237.jpg">
+            <div id="title" class="container">
+                <img id="main-title" src="images/jaymatsushiba.svg" alt="JAY MATSUSHIBA">
+                <img id="sub-title" src="images/environmenteducationgis-light.svg" alt="ENVIRONMENT | EDUCATION | GIS">
+            </div>
+        </div>
+
+        <!-- Biography Page -->
+        <div id="bio-page" class="section">            
+            <div class="container">
+                <div class="row">
+                    <img src="images/aboutme.svg" alt="about me" class="heading">
+                </div>
+                <div class="row">
+                    <div class="col-6 mx-auto">
+                        <h3>
+                            Biography
+                        </h3>
+                        <!-- Short biography -->
+                        <!-- need to rewrite for shorter and more relevant bio -->
+                        <p>
+                            Jay is a passionate advocate for the oceans, dedicating his work in education at the Vancouver Aquarium, Richmond Nature Park and Metro Vancouver. He has spoken on the topic of environmental education at TEDx events, the Vancouver School Board Sustainability Conference, and the Richmond Earth Day Youth Summit. He brings his passion to his own education, as he currently studies Ecology, Evolution and Conservation at Simon Fraser University. Jay can be found exploring the natural world every chance that he gets. Recently, Jay completed the East Beach trail hike on Haida Gwaii, covering 90 km by foot solo over the course of five days. As a strong proponent of storytelling, Jay believes that Promenades sur l’eau will tell the story about our oceans and our connections to the natural world through fashion. 
+                        </p>
+                    </div>
+                    <div class="col-6 mx-auto">
+                        <h3>Education</h3>
+                        <!-- Timeline of educational history -->
+                        <ul class="timeline">
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">BSc - Biological Sciences </h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>In Progress</span>
+                                <p class="text-small mt-2 font-weight-light">Simon Fraser University</p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">Certificate - Geographical Information Science </h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Completed December 2019</span>
+                                <p class="text-small mt-2 font-weight-light">Simon Fraser University</p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">Diploma - International Baccalaureate </h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Completed June 2016</span>
+                                <p class="text-small mt-2 font-weight-light">Sir Winston Churchill Secondary</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class='row' id="introduction">
-                    <div class='col'>
-                    <p>exploring patterns in the natural world for a more responsible future</p>
+                <div class="row">
+                    <div class="col">
+                        <h3>Where am I?</h3>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col">
+                        insert map of the world here, with vancouver blinking 
                     </div>
                 </div>
             </div>
         </div>
 
-    <!-- About Me section, with biography, photo, educational background and media links -->
-        <div class='container-fluid' id='aboutMe'>
-            <div class='parallax-container'>
-                <section class='background_image'>
-                    <img src='imonaboat.jpg'>
-                </section>
-            </div>
-            <div class='row no-gutters justify-content-center'> 
-                <div class='col-sm-10 foreground'>
-                    <div class='row justify-content-center'>
-                        <div class='col-lg-2'>
-                            <hr>
-                            <h5 class="aboutMeSubTitle">ABOUT</h5>
-                        </div>
-                        <p id="bio-p" class='col-sm-9'></p>
-                        <div class='col-lg-2'>
-                            <hr>
-                            <h5 class='aboutMeSubTitle'>EDUCATION</h5>  
-                        </div>
-                        <div class='col-sm-9'>              
-                            <ul id="bio-list" class='list-unstyled'>
-                                <li class='school'>Simon Fraser University</li>
-                                    <ul>
-                                        <li class='listEducationItem'>Bachelors of Science in Biology sp. Ecology, Evolution and Conservation</li>
-                                        <li class='listEducationItem'>Certificate in Geographical Information Science</li>
-                                    </ul>    
-                                <li class='school'>freeCodeCamp</li>
-                                    <ul>
-                                        <li class='listEducationItem'>Responsive Web Development Certification</li>
-                                        <li class='listEducationItem'>Javascript Algorithms and Data Structure Certification</li>
-                                    </ul>
-                            </ul>
-                        </div>
-                        <div class='col-lg-2'>
-                            <hr>
-                            <h5 class='aboutMeSubTitle'>CONTACT</h5>
-                        </div>
-                        <div class='col-sm-9'>
-                            <div id="contactTileHolder" class='row'>
-                                <!-- LinkedIn link -->
-                                <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
-                                    <div class="col-auto p-0 mr-3 mb-5 contactTile" id="linkedIn">
-                                        <div class="circle">
-                                            <i class="fab fa-linkedin"></i>
-                                        </div>
-                                        <p>LinkedIn</p>
-                                    </div>
-                                </a>
-                                <!-- GitHub link -->
-                                <a href="https://github.com/JayMatsushiba" target="_blank">
-                                    <div class="col-auto p-0 mr-3 mb-5 contactTile mr-xs-auto" id="github">
-                                        <div class="circle">
-                                            <i class="fab fa-github"></i>
-                                        </div>
-                                        <p>GitHub</p>
-                                    </div>
-                                </a>
-                                <!-- SFU Email link -->
-                                <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
-                                    <div class="col-auto p-0 mr-3 mb-5 contactTile mr-xs-auto" id="email">
-                                        <div class="circle">
-                                            <i class="fas fa-envelope"></i>
-                                        </div>
-                                        <p>Email</p>
-                                    </div>
-                                </a>
-                                <!-- Resume link -->
-                                <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
-                                    <div class="col-auto p-0 mr-3 mb-5 contactTile" id="resume"> 
-                                        <div class="circle">
-                                            <i class="fas fa-file-alt"></i>
-                                        </div>
-                                        <p>Resume</p>
-                                    </div>
-                                </a>
+        <!-- Project Page -->
+        <div id="project-page" class='section'>
+            <div class="container">
+                <div class=row>
+                    <img src="images/featuredprojects.svg" alt="Featured Projects" class="heading">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a href="projects.html" target="_blank"><h4>See more</h4></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-    <!-- Project section, for GIS, Biology and Programming-->
-        <!-- To-do list: 
-        - Design project tiles and add images 
-        - Rethink organization, may not separate into different sections
-            - maybe colour code the grid by category 
-        - Better grid system organization, use Bootstrap to make more mobile friendly 
-        -->
-        <div id="projects">
-            <div class='container-fluid p-5'>
-                <h2>Projects</h2>
-                <div class='row justify-content-center'>
-                    <div class='col-md-4 projectTile'><a href="https://jaymatsushiba.github.io/coral-reef/">
-                        <h3>Coral Reef Habitat Suitability Analysis</h3>
-                        <p>Multi-Criteria Evaluation Analysis Project</p> 
-                    </a></div>
-                    <div class='col-md-4 projectTile'><a href="https://jaymatsushiba.github.io/cellularautomata/">
-                        <h3>Amazon Forest Fire Model</h3>
-                        <p>Cellular Automata</p>
-                    </a></div>
-                    <div class='col-md-4 projectTile'><a href="https://jaymatsushiba.github.io/seaweed/">
-                        <h3>Seaweed Distribution Project</h3>
-                        <p>BMSC Coastal Community Ecology Project</p>
-                    </a></div>
-                    <div class="col-md-4 projectTile"><a href="https://jaymatsushiba.github.io/evolution/">
-                        <h3>Evolution and Gene Flow Model</h3>
-                        <p>Model of Evolution and Gene Flow in JavaScript</p>
-                    </a></div>
-                    <div class='col-md-4 projectTile'><a href="https://jaymatsushiba.github.io/cash-register/">
-                        <h3>Cash Register</h3>
-                        <p>Cash Register Project for Javascript Certification at FCC</p>
-                    </a></div>
+        <!-- Expedition Page -->
+        <div id="expedition-page" class='section'>
+            <div class="container">
+                <div class="row">
+                    <img src="images/recentexpeditions.svg" alt="recent expeditions" class="heading">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="card-link">Card link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a href="expeditions.html" target="_blank"><h4>See more</h4></a>
+                    </div>
                 </div>
             </div>
         </div>
 
-    <!-- footer section -->
-
-        <div id='footer' class='container-fluid p-5'>
-            <p>This is the end of my website</p>
+        <!-- Contact Information Page -->
+        <div id="contact-page" class='section'>
+            <div class="container">
+                <div class="row">
+                    <img src="images/contactme.svg" alt="contact me" class="heading">
+                </div>
+                <div id="contactTileHolder" class='row d-flex justify-content-center'>
+                    <!-- LinkedIn link -->
+                    <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="linkedIn">
+                            <div class="circle">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/JayMatsushiba" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="github">
+                            <div class="circle">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                    <!-- SFU Email link -->
+                    <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="email">
+                            <div class="circle">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p>Email</p>
+                        </div>
+                    </a>
+                    <!-- Resume link -->
+                    <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
+                        <div class="col-auto p-0 mx-2 contactTile" id="resume"> 
+                            <div class="circle">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <p>Resume</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
 
-    <!-- script used for loading biography text file into aboutMe section -->
-    <script>
-        $(document).ready(function() {
-            $("#bio-p").text("fallback text: Jay is a passionate advocate for the oceans, dedicating his work in education at the Vancouver Aquarium, Richmond Nature Park and Metro Vancouver. He has spoken on the topic of environmental education at TEDx events, the Vancouver School Board Sustainability Conference, and the Richmond Earth Day Youth Summit. He brings his passion to his own education, as he currently studies Ecology, Evolution and Conservation at Simon Fraser University. Jay can be found exploring the natural world every chance that he gets. ");
-            $("#bio-p").load("bio.txt")
-        });
-    </script>
-
-
-
+        <!-- JavaScript for Bootstrap -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src='script.js'></script>
     </body>
 </html>
