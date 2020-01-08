@@ -114,6 +114,26 @@ li.timeline-item::before {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
+#map-components {
+  width: 100%;
+  padding-top: 125%;
+  position: relative;
+  margin-bottom: -30%;
+}
+
+#map {
+  top: -10%;
+  height: 100%;
+  max-width: 100%;
+  position: absolute;
+}
+
+#map-location {
+  top: 40.5%;
+  left: 40.3%;
+  position: absolute;
+}
+
 .card-title {
   color: #0F1B26;
 }
