@@ -19,10 +19,6 @@ html {
     }
 }
 
-.heading {
-    margin-bottom: 25px;
-}
-
 .navbar {
 	background-color:$darkest-color;
     color: $lightest-color;
@@ -36,6 +32,10 @@ html {
     padding-top: 80px;
     border-bottom: 2px solid $light-color;
     min-height: 100vh;
+}
+
+.heading {
+    margin-bottom: 1.5rem;
 }
 
 // LANDING PAGE 
@@ -158,13 +158,19 @@ li.timeline-item::before {
 }
 
 // Cards for projects and expeditions 
-.card-title {
-    color: $darkest-color;
+.card {
+    transition: 0.3s;
 }
 
-.card-text {
-    color: $darkest-color;
+.card-img {
+    transition: 0.3s;
+    filter: brightness(60%);
 }
+.card:hover > .card-img {
+    filter: brightness(80%);
+}
+
+
 
 // Contact tiles for contact page 
 .contactTile {
