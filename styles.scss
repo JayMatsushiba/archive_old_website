@@ -24,6 +24,11 @@ html {
     border-bottom: 2px solid $light-color;
 }
 
+.navbar-brand img {
+    height: 30px;
+    max-width: 60vw;
+}
+
 .section {
     background-color: $darkest-color;
     margin-bottom: 0;

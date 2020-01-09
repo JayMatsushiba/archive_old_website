@@ -14,6 +14,11 @@ html body {
   border-bottom: 2px solid #F2C1BD;
 }
 
+.navbar-brand img {
+  height: 30px;
+  max-width: 60vw;
+}
+
 .section {
   background-color: #0F1B26;
   margin-bottom: 0;
