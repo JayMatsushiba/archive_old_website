@@ -1,53 +1,10 @@
-// theme fonts
-$title-font: 'Overpass Mono', monospace;
-$main-font: 'Roboto', sans-serif;
-
-// theme colours
-$lightest-color: white;
-$light-color: #F2C1BD;
-$dark-color: #324759;
-$darkest-color: #0F1B26;
-
-html {
-    scroll-behavior: smooth;
-    body {
-        padding-top: 50px;
-        background-color: $darkest-color;
-        color: $lightest-color;
-        font-family: $main-font;
-    }
-}
-
-.navbar {
-	background-color:$darkest-color;
-    color: $lightest-color;
-    border-bottom: 2px solid $light-color;
-}
-
-.navbar-brand img {
-    height: 30px;
-    max-width: 60vw;
-}
-
-.section {
-    background-color: $darkest-color;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    padding-top: 80px;
-    border-bottom: 2px solid $light-color;
-    min-height: 100vh;
-}
-
-.heading {
-    margin-bottom: 1.5rem;
-    max-width: 100vw;
-}
+@use 'base';
 
 // LANDING PAGE 
 
 #title-page {
     height: calc(100vh - 50px);
-    border-bottom: 2px solid $light-color;
+    border-bottom: 2px solid base.$light-color;
 }
 
 #title-image {
@@ -69,7 +26,7 @@ $sub-title-height: 20px;
 
 #title #main-title {
     position: fixed;
-    height: $main-title-height;
+    height: base.$main-title-height;
     max-width: 100vw;
     top: -moz-calc(50% - #{$main-title-height});
     top: -webkit-calc(50% - #{$main-title-height});
@@ -98,13 +55,13 @@ ul.timeline {
     list-style-type: none;
     position: relative;
     padding-left: 1.5rem;
-    color: $darkest-color;
+    color: base.$darkest-color;
 }
 
  /* Timeline vertical line */
 ul.timeline:before {
     content: ' ';
-    background: $lightest-color;
+    background: base.$lightest-color;
     display: inline-block;
     position: absolute;
     left: 16px;
@@ -121,7 +78,7 @@ li.timeline-item {
 /* Timeline item arrow */
 .timeline-arrow {
     border-top: 0.5rem solid transparent;
-    border-right: 0.5rem solid $lightest-color;
+    border-right: 0.5rem solid base.$lightest-color;
     border-bottom: 0.5rem solid transparent;
     display: block;
     position: absolute;
@@ -131,11 +88,11 @@ li.timeline-item {
 /* Timeline item circle marker */
 li.timeline-item::before {
     content: ' ';
-    background: $darkest-color;
+    background: base.$darkest-color;
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 3px solid $lightest-color;
+    border: 3px solid base.$lightest-color;
     left: 11px;
     width: 14px;
     height: 14px;
@@ -201,7 +158,7 @@ li.timeline-item::before {
 
     i { 
         font-size: calc(var(--size-contact-tile)*0.7);
-        color: $dark-color;
+        color: base.$dark-color;
         z-index: 4;
         position: absolute;
         left: 50%;
@@ -211,7 +168,7 @@ li.timeline-item::before {
     p {
         font-family: 'Open Sans', sans-serif;
         font-size: calc(var(--size-contact-tile)*0.2);
-        color: $lightest-color;
+        color: base.$lightest-color;
         z-index: 3;
         position: absolute;
         left: 50%;
@@ -221,11 +178,11 @@ li.timeline-item::before {
     .circle {
         width: 100%;
         height: 100%;
-        background: $light-color;
+        background: base.$light-color;
         border-radius: 50%;
         z-index: 1;
     }
     .circle:hover {
-        background: $lightest-color;
+        background: base.$lightest-color;
     }
 }
