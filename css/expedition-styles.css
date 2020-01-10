@@ -36,6 +36,12 @@ html body {
   max-width: 100vw;
 }
 
+.expedition-entry {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
 #title-page {
   height: calc(100vh - 50px);
   border-bottom: 2px solid #F2C1BD;
@@ -48,10 +54,20 @@ html body {
   z-index: -1;
 }
 
+.carousel-item {
+  height: 100vh;
+  width: 100vw;
+}
+
 .carousel-item img {
-  height: auto;
+  height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.expedition-entry {
+  border-bottom: 2px solid #F2C1BD;
+  margin-bottom: 0.5rem;
 }
 
 #title #main-title {
