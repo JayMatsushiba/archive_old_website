@@ -1,28 +1,5 @@
-$(document).ready(function () {
-  //Preloader
-  function hidePreloader() {
-    $('.loader-wrapper').fadeOut("slow");
-  }
-  hidePreloader();
-
-  /* activate scrollspy menu */
-  $('body').scrollspy({
-    target: '#navbarNavAltMarkup',
-    offset: 50
-  });
-
-  /* smooth scrolling sections */
-  $('a[href*="#"]:not([href="#"])').click(function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top - 50
-        }, 1000);
-        return false;
-      }
-    }
-  });
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
 });
+
 
