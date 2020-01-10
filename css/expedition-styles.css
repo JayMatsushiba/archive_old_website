@@ -13,6 +13,9 @@ html body {
   color: white;
   border-bottom: 2px solid #F2C1BD;
 }
+.navbar a {
+  text-decoration: none;
+}
 
 .navbar-brand img {
   height: 30px;
@@ -73,4 +76,4 @@ html body {
   z-index: -1;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=expedition-styles.css.map */

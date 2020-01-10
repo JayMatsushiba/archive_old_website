@@ -22,6 +22,10 @@ html {
 	background-color:$darkest-color;
     color: $lightest-color;
     border-bottom: 2px solid $light-color;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .navbar-brand img {
