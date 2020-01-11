@@ -38,7 +38,7 @@ MAIN {
   background-color: #0F1B26;
   margin-bottom: 0;
   padding-bottom: 0;
-  padding-top: 80px;
+  padding-top: 20px;
   border-bottom: 2px solid #F2C1BD;
   min-height: 100vh;
 }
@@ -46,6 +46,13 @@ MAIN {
 .heading {
   margin-bottom: 1.5rem;
   max-width: 100vw;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  top: -60px;
+  visibility: hidden;
 }
 
 #title-page {
