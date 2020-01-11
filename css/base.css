@@ -38,9 +38,14 @@ MAIN {
   background-color: #0F1B26;
   margin-bottom: 0;
   padding-bottom: 0;
-  padding-top: 20px;
+  padding-top: 40px;
   border-bottom: 2px solid #F2C1BD;
+  border-top: 2px solid #F2C1BD;
   min-height: 100vh;
+}
+
+#projects-content {
+  border-top: 4px solid #F2C1BD;
 }
 
 .heading {

@@ -47,9 +47,14 @@ MAIN {
     background-color: $darkest-color;
     margin-bottom: 0;
     padding-bottom: 0;
-    padding-top: 20px;
+    padding-top: 40px;
     border-bottom: 2px solid $light-color;
+    border-top: 2px solid $light-color;
     min-height: 100vh;
+}
+
+#projects-content {
+    border-top: 4px solid $light-color;
 }
 
 .heading {
