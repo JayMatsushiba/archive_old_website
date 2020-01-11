@@ -151,38 +151,26 @@ li.timeline-item::before {
 }
 
 // Contact tiles for contact page 
-.contactTile {
-    --size-contact-tile: 5.5rem;
-    height: var(--size-contact-tile);
-    width: var(--size-contact-tile);
+$circleSize: 100px;
+.circle {
+    height: $circleSize;
+    width: $circleSize;
+    border-radius: 50%;
+    background-color: base.$light-color;
 
-    i { 
-        font-size: calc(var(--size-contact-tile)*0.7);
+    i {
+        height: $circleSize;
+        width: $circleSize;
+        font-size: calc(#{$circleSize} * 0.7);
         color: base.$dark-color;
-        z-index: 4;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%);
     }
-    p {
-        font-family: 'Open Sans', sans-serif;
-        font-size: calc(var(--size-contact-tile)*0.2);
-        color: base.$lightest-color;
-        z-index: 3;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%,180%);
-    }
-    .circle {
-        width: 100%;
-        height: 100%;
-        background: base.$light-color;
-        border-radius: 50%;
-        z-index: 1;
-    }
-    .circle:hover {
-        background: base.$lightest-color;
-    }
+}
+
+.contactTile {
+    color: base.$lightest-color;
+    margin-right: 1rem;
+}
+
+a:hover {
+    text-decoration: none !important;
 }
