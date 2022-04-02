@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">        <!-- reference to css file-->
+        
+        <!-- my CSS -->
+        <link href="css/base.css" rel="stylesheet" type="text/css">
+        <link href="css/home-styles.css" rel="stylesheet" type="text/css">
+        <link href="css/loader.css" rel="stylesheet" type="text/css">
+
+        <!-- font source-->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Overpass+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
+        <!-- source for fontawesome icons -->
+        <script src="https://kit.fontawesome.com/49e402ffef.js" crossorigin="anonymous"></script>
+
+        <title>Jay Matsushiba</title>
+    </head>
+    <body>
+        
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/jaymatsushiba-light.svg" alt='JAY MATSUSHIBA'>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link " href="#bio-page">About</a>
+                    <a class="nav-item nav-link " href="#project-page">Projects</a>
+                    <a class="nav-item nav-link " href="#expedition-page">Expeditions</a>
+                    <a class="nav-item nav-link " href="#contact-page">Contact</a>
+                  </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title Page -->
+        <div id="title-page">
+            <img id="title-image" src="images/hg2018-3237.jpg">
+            <div id="title" class="container">
+                <img id="main-title" src="images/jaymatsushiba.svg" alt="JAY MATSUSHIBA">
+                <img id="sub-title" src="images/environmenteducationgis-light.svg" alt="ENVIRONMENT | EDUCATION | GIS">
+            </div>
+        </div>
+
+        <!-- Biography Page -->
+        <a id="bio-page" class="anchor"></a>
+        <div class="section">            
+            <div class="container">
+                <div class="row">
+                    <img src="images/aboutme.svg" alt="about me" class="mb-3">
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-12 mx-auto">
+                        <!-- Short biography -->
+                        <!-- need to rewrite for shorter and more relevant bio -->
+                        <p>
+                            Jay is a passionate advocate for the oceans, dedicating his work in education at the Vancouver Aquarium, Richmond Nature Park and Metro Vancouver. He has spoken on the topic of environmental education at TEDx events, the Vancouver School Board Sustainability Conference, and the Richmond Earth Day Youth Summit. He brings his passion to his own education, as he currently studies Ecology, Evolution and Conservation at Simon Fraser University. Jay can be found exploring the natural world every chance that he gets. Recently, Jay completed the East Beach trail hike on Haida Gwaii, covering 90 km by foot solo over the course of five days. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div id="map-components">
+                            <img id="map" src="images/map.svg" alt="map - vancouver bc"></img>
+                            <div id="map-location" class="spinner-grow text-info" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 mx-auto">
+                        <!-- Timeline of educational history -->
+                        <ul class="timeline">
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">BSc - Biological Sciences </h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>In Progress</span>
+                                <p class="text-small mt-2 font-weight-light">Simon Fraser University</p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">Certificate - Geographical Information Science </h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Completed December 2019</span>
+                                <p class="text-small mt-2 font-weight-light">Simon Fraser University</p>
+                            </li>
+                            <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
+                                <div class="timeline-arrow"></div>
+                                <h2 class="h5 mb-0">Diploma - International Baccalaureate </h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>Completed June 2016</span>
+                                <p class="text-small mt-2 font-weight-light">Sir Winston Churchill Secondary</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Page -->
+        <a id="project-page" class="anchor"></a>
+            <div class='section'>
+                <div class="container">
+                    <div class=row>
+                        <img src="images/featuredprojects.svg" alt="Featured Projects" class="heading">
+                    </div>
+                    <div class="card-columns">
+                        <a href="https://jmatsushiba.com/seaweed">
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/kelp.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Effects of Wave Exposure on Changes in Kelp Diversity and Abundance</h5>
+                                    <p class="card-text">Bamfield Marine Science Center - Coastal Community Ecology 2019</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://jmatsushiba.com/coral-reef-climate-change-model">
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/coral reef map.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Changes in Global Coral Reef Habitat Suitability under Climate Change</h5>
+                                <p class="card-text">Simon Fraser University - Geographic Information Science II</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.jmatsushiba.com/cubez/">
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/cubez.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Cubez</h5>
+                                <p class="card-text">3D WebGL game built in Unity</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.jmatsushiba.com/drum-machine/">
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/drum-machine.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                <h5 class="card-title">Drum Machine</h5>
+                                <p class="card-text">Interactive Drum Machine WebApp built with React</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col">
+                            <!-- turn off projects page until finished <a href="projects.html" target="_blank"><h4>See more</h4></a> --> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Expedition Page -->
+        <a id="expedition-page" class="anchor"></a>
+        <div class='section'>
+            <div class="container">
+                <div class="row">
+                    <img src="images/recentexpeditions.svg" alt="recent expeditions" class="heading">
+                </div>
+                <div class="row">
+                    <div class="card-columns">
+                        <a href="expeditions.html#east-beach-trail-2018">
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/east-beach-trail.png" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">East Beach Trail</h5>
+                                    <p class="card-text">Naikoon Provincial Park, BC</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="expeditions.html#west-coast-trail-2017">
+                            <div class="card bg-dark border-light text-white">
+                            <img class="card-img" src="images/west-coast-trail.jpg" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">West Coast Trail</h5>
+                                <p class="card-text">Pacific Rim National Park, BC</p>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="expeditions.html#elfin-lakes-2018">
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/elfin-lake.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Elfin Lakes Hut</h5>
+                                    <p class="card-text">Garibaldi Provincial Park, BC</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a>
+                            <div class="card bg-dark border-light text-white">
+                                <img class="card-img" src="images/brockton-point.jpg" alt="Card image">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Brockton Point</h5>
+                                    <p class="card-text">Mt. Seymour Provincial Park, BC</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col">
+                        <a href="expeditions.html" target="_blank"><h4>ALL EXPEDITIONS</h4></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Information Page -->
+        <a id="contact-page" class="anchor"></a>
+        <div class='section'>
+            <div class="container">
+                <div class="row">
+                    <img src="images/contactme.svg" alt="contact me" class="heading">
+                </div>
+                <div id="contactTileHolder" class='row'>
+                    <!-- LinkedIn link -->
+                    <a href="https://www.linkedin.com/in/jay-matsushiba/" target="_blank">
+                        <div class="col contactTile" id="linkedIn">
+                            <div class="row justify-content-center">
+                                <div class="circle">
+                                    <i class="fab fa-linkedin d-flex justify-content-center align-items-center"></i>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p>LinkedIn</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- GitHub link -->
+                    <a href="https://github.com/JayMatsushiba" target="_blank">
+                        <div class="col contactTile" id="github">
+                            <div class="row justify-content-center">
+                                <div class="circle">
+                                    <i class="fab fa-github d-flex justify-content-center align-items-center"></i>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p>GitHub</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- SFU Email link -->
+                    <a href="mailto:jay_matsushiba@sfu.ca" target="_blank">
+                        <div class="col contactTile" id="email">
+                            <div class="row justify-content-center">
+                                <div class="circle">
+                                    <i class="far fa-envelope d-flex justify-content-center align-items-center"></i>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p>Email</p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Resume link -->
+                    <a href="https://github.com/JayMatsushiba/JayMatsushiba.github.io/raw/master/Resume_JayMatsushiba.pdf" target="_blank">
+                        <div class="col contactTile" id="resume">
+                            <div class="row justify-content-center">
+                                <div class="circle">
+                                    <i class="fas fa-file-alt d-flex justify-content-center align-items-center"></i>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <p>Resume</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- loading screen -->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+
+        <!-- JavaScript for Bootstrap -->
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>            
+        <script src='script.js'></script>
+        
+    </body>
+</html>
